@@ -1,4 +1,4 @@
-module github.com/bjwschaap/vatis
+module gitlab.proatnedap.org/infra/probe-server
 
 go 1.13
 
