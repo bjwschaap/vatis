@@ -46,7 +46,7 @@ func connect(clientID string, uri *url.URL) mqtt.Client {
 	for !token.WaitTimeout(3 * time.Second) {
 	}
 	if err := token.Error(); err != nil {
-		log.Errorf("Error connecting to MQTT Broker: %v", err)
+		log.Fatalf("Error connecting to MQTT Broker: %v", err)
 	}
 	return client
 }
