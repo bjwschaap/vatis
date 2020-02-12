@@ -1,4 +1,4 @@
-module gitlab.proatnedap.org/nimbus/vatis
+module github.com/bjwschaap/vatis
 
 go 1.13
 
