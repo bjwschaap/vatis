@@ -1,4 +1,4 @@
-module gitlab.proatnedap.org/infra/probe-server
+module gitlab.proatnedap.org/nimbus/vatis
 
 go 1.13
 
