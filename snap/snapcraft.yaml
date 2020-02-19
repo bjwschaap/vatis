@@ -1,0 +1,18 @@
+name: vatis
+version: git
+summary: Metrics to MQTT daemon.
+description: |
+  Vatis pushes various basic system metrics to MQTT.
+confinement: devmode
+base: core18
+parts:
+  vatis:
+    plugin: go
+    go-importpath: gitlab.proatnedap.org/nimbus/vatis
+    source: .
+    source-type: git
+    build-packages:
+      - gcc
+apps:
+  vatis:
+    command: bin/vatis
